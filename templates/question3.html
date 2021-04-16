@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+
+{%block title%}Question 3{%endblock%}
+{%block content%}
+   
+<h1>{{questions[2].question}}</h1>
+
+<form action="/questions/add3" method = "POST">
+<label for="yes">{{questions[2].choices[0]}}</label>
+<input type="radio" name="yes" id="yes" value = "Yes">
+<label for="no">{{questions[2].choices[1]}}</label>
+<input type="radio" name="no" id="no" value ="No">
+
+<button>Next</button>
+</form>
+
+
+
+{%endblock%}
